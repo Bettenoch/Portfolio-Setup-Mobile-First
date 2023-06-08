@@ -52,7 +52,7 @@ and contact information. As most industry's are looking for digital precense, a 
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+
 
 - **[Mobile_first design]**
 - **[Cross-plartfom responsiveness]**
