@@ -27,7 +27,7 @@
   align-items: center;
   position: sticky;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  padding-top: 0.4rem;
+  padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   padding-left: 1.5rem;
   padding-right: 1.6rem;
@@ -43,7 +43,7 @@
   margin-right: auto;
 }
 
-.mylogo h1 a {
+.mylogo a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -154,15 +154,353 @@
 }
 
 .background-image {
+  overflow-y: hidden;
   position: absolute;
-  left: 60.64%;
-  top: 52.3%;
+  left: 58.74%;
+  top: 51.3%;
+  bottom: -11.63%;
+  right: -30%;
 }
 
 @media screen and (max-width: 360px) {
   .background-image {
     position: absolute;
-    left: 57.64%;
-    top: 58.3%;
+    left: 58.64%;
+    top: 52.3%;
+    bottom: -11.63%;
   }
+}
+
+/* Work Section */
+.main-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.grid-title {
+  border-bottom: 0.122rem solid #c9b7b7;
+}
+
+.title-text {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+}
+
+.title-text h1 {
+  color: #1c1a19;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item1 {
+  display: flex;
+  padding-top: 5rem;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.img-holder {
+  padding-bottom: 1.5rem;
+}
+
+.img-holder img {
+  max-width: 20.4rem;
+  max-height: 14.8rem;
+}
+
+.text-group {
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-group h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: #091e42;
+}
+
+.text-group p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #091e42;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+}
+
+.languages,
+.language {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.language li {
+  line-height: 1.25rem;
+  border: 1px solid #8993a4;
+  padding: 0.625rem 0.75rem;
+}
+
+.language li a {
+  color: #091e42;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.btn-holder {
+  text-decoration: none;
+  border: none;
+}
+
+.btn {
+  padding: 0.75rem;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.06rem;
+  line-height: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.03em;
+  border: none;
+}
+
+.btn:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.item2 {
+  display: flex;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 700.94%), url(/Assets/images/backimage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content h3 {
+  padding-top: 4.5rem;
+  padding-left: 0.81rem;
+  padding-right: 1.18rem;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: #fff;
+}
+
+.content p {
+  padding: 0.75rem 0.81rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+.tags {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0 1.37rem 4.2rem 0.81rem;
+}
+
+.tags,
+.tag {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.tag li {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 0.625rem 0.75rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.935rem;
+  line-height: 1.25rem;
+}
+
+.tag li a {
+  color: #fff;
+}
+
+.btn2-holder {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 0.75rem;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.06rem;
+  line-height: 1.5rem;
+  color: #fff !important;
+  letter-spacing: 0.03em;
+  border: none;
+}
+
+.btn2-holder:hover {
+  color: #f55800 !important;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+/* about section */
+.about-container {
+  background: url(/Assets/images/about-background.svg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.about h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.023rem;
+  color: #ff6b00;
+}
+
+.about p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #f4f5f7;
+}
+
+.about-me-banner {
+  position: relative;
+  left: 57.64%;
+
+  /* right: 39%; */
+  right: -99.81%;
+  top: 15%;
+  bottom: 43%;
+}
+
+.divider {
+  border-top: 2px solid #b1a9a9;
+  margin: 1.5rem;
+}
+
+/* Skills section */
+.skills1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 6rem 2rem 4.67rem 4.67rem;
+}
+
+.skills1-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  gap: 0.75rem;
+}
+
+.skills1-top h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: #fff;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.75rem;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.list-items li a {
+  list-style: none;
+  justify-content: center;
+  padding: 2rem 0;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.023rem;
+  color: #fff;
+}
+
+.skills2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem 2.93rem 2.93rem;
+  gap: 1.5rem;
+}
+
+.skills2-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  gap: 0.75rem;
+}
+
+.skills2-top h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: #fff;
 }
