@@ -120,21 +120,23 @@
 .secondary-text {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
-  padding: 0.75rem 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.6rem;
   color: var(--grey-white);
 }
 
 .description-text {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--grey-white);
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+  padding-bottom: 1rem;
 }
 
 .socialmedia {
