@@ -358,33 +358,19 @@
 
 .btn2-holder {
   display: flex;
-  
   text-decoration: none;
   justify-content: center;
   padding: 0.75rem;
-  border: none;
   background: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.06rem;
   line-height: 1.5rem;
-  color: #fff !important	;
+  color: #fff !important;
   letter-spacing: 0.03em;
   border: none;
 }
-
-/* .btn2 {
-  background: #ff6b00;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.06rem;
-  line-height: 1.5rem;
-  color: #fff;
-  letter-spacing: 0.03em;
-  border: none;
-} */
 
 .btn2-holder:hover {
   color: #f55800 !important;
@@ -463,7 +449,7 @@
   gap: 0.75rem;
 }
 
-.skills1-top h1 {
+.skills1-top h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
