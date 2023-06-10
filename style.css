@@ -358,15 +358,24 @@
 
 .btn2-holder {
   display: flex;
-  background: #ff6b00;
+  
   text-decoration: none;
   justify-content: center;
   padding: 0.75rem;
   border: none;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.06rem;
+  line-height: 1.5rem;
+  color: #fff !important	;
+  letter-spacing: 0.03em;
+  border: none;
 }
 
-.btn2-holder,
-.btn2 {
+/* .btn2 {
+  background: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -375,7 +384,7 @@
   color: #fff;
   letter-spacing: 0.03em;
   border: none;
-}
+} */
 
 .btn2-holder:hover {
   color: #f55800 !important;
