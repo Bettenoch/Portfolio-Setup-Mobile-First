@@ -27,7 +27,7 @@
   align-items: center;
   position: sticky;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  padding-top: 0.4rem;
+  padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   padding-left: 1.5rem;
   padding-right: 1.6rem;
@@ -43,7 +43,7 @@
   margin-right: auto;
 }
 
-.mylogo h1 a {
+.mylogo a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -186,16 +186,10 @@
 }
 
 .grid-title {
-  border-bottom: 1px solid #212121;
+  border-bottom: 0.122rem solid #c9b7b7;
 }
 
 .title-text {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.6rem;
-
-  /* line-height: 3.25rem; */
   display: flex;
   align-items: center;
   padding-bottom: 2rem;
@@ -204,6 +198,10 @@
 
 .title-text h1 {
   color: #1c1a19;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
 }
 
 .grid-item {
@@ -233,7 +231,7 @@
   flex-direction: column;
 }
 
-.text-group h1 {
+.text-group h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -309,7 +307,7 @@
   background-size: cover;
 }
 
-.content h1 {
+.content h3 {
   padding-top: 4.5rem;
   padding-left: 0.81rem;
   padding-right: 1.18rem;
@@ -321,7 +319,7 @@
   color: #fff;
 }
 
-.content h2 {
+.content p {
   padding: 0.75rem 0.81rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -391,6 +389,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  margin-top: 6rem;
 }
 
 .about {
@@ -404,7 +403,7 @@
   padding-right: 1.5rem;
 }
 
-.about h1 {
+.about h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -450,13 +449,13 @@
 .skills1-top {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   padding: 0.5rem 0.75rem;
   gap: 0.75rem;
 }
 
 .skills1-top h1 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -467,17 +466,19 @@
 .list-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding: 0 0.75rem;
   gap: 0.5rem;
+  text-align: center;
 }
 
 .list-items li a {
   list-style: none;
+  justify-content: center;
   padding: 2rem 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.375rem;
   line-height: 2.7rem;
   letter-spacing: 0.023rem;
@@ -500,8 +501,8 @@
   gap: 0.75rem;
 }
 
-.skills2-top h1 {
-  font-family: 'Crete Round', sans-serif;
+.skills2-top h2 {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
