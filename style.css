@@ -154,19 +154,15 @@
 }
 
 .background-image {
-  overflow-y: hidden;
   position: absolute;
-  left: 58.74%;
-  top: 51.3%;
-  bottom: -11.63%;
-  right: -30%;
+  left: 60.64%;
+  top: 52.3%;
 }
 
 @media screen and (max-width: 360px) {
   .background-image {
     position: absolute;
-    left: 58.64%;
-    top: 52.3%;
-    bottom: -11.63%;
+    left: 57.64%;
+    top: 58.3%;
   }
 }
