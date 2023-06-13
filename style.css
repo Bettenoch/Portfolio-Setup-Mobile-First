@@ -504,3 +504,140 @@
   line-height: 2.75rem;
   color: #fff;
 }
+ /* form */
+
+  /* .input-box{
+    height: ;
+  } */
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    padding-left: 1.475rem;
+    padding-right: 1.5625rem;
+    gap: 3.62rem;
+  
+   }
+   .contact-bottom-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .contact-upper-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 1.5rem;
+   }
+   .contact-upper-bar p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    text-align: center;
+    color: #172b4d;
+  
+   }
+   .input-box{
+    height: 2rem;
+    width: 100%;
+    border-bottom: 1px solid #dbd8d7;
+    display: flex;
+    align-items: center;
+    color: #979493;
+    padding: 1.5rem 1.5rem 1.437rem  1.562rem;
+  
+    
+   }
+   .input-box input{
+    border: none;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.94rem;
+    padding: 0.75rem;
+    
+   }
+   .input-area{
+   
+    padding: 1.5rem 1.5rem 1.437rem  1.562rem;
+    
+   }
+   .input-area textarea{
+    border: none;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    padding: 0.75rem;
+    background: #fbf8f7;
+    resize: none;
+    border-radius: 0.625rem;
+    height: 7.125rem;
+   }
+   .submit{
+    display: flex;
+    text-decoration: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .contact-btn{
+    padding: 0.75rem;
+    background: #ff6b00;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.06rem;
+    color: #fff;
+    letter-spacing: 0.03em;
+    border: none;
+    
+   }
+   /* footer */
+   .contact_socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #081e42 !important;
+    padding-top: 0.935rem;
+    padding-bottom: 2.31rem;
+    cursor: pointer;
+  }
+  
+  .contact_socialmedia,
+  .contact_socialmedia-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #081e42 !important;
+    
+  }
+  .footerr{
+    border-top:1px solid #dfe1e6;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+  }
+  .home-indicator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.6875rem;
+  }
+  .indicator{
+    width: 8.375rem;
+    height: 0.3125rem;
+    background: #0d151e;
+    border-radius: 0.625rem;
+   
+  }
