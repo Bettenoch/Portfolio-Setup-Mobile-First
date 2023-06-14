@@ -98,7 +98,7 @@
   gap: 0.75rem;
   overflow: hidden;
   text-decoration: none;
-  background: url('/Assets/images/Base.png') !important;
+  background: url('/assets/images/Base.png') !important;
   background-size: cover;
 }
 
@@ -137,8 +137,6 @@
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--grey-white);
-
-  /* margin: 1rem 0; */
   padding-bottom: 1rem;
 }
 
@@ -302,7 +300,7 @@
 
 .item2 {
   display: flex;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 700.94%), url(/Assets/images/backimage.png) !important;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 700.94%), url(/assets/images/backimage.png) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -381,7 +379,7 @@
 
 /* about section */
 .about-container {
-  background: url(/Assets/images/about-background.svg) !important;
+  background: url(/assets/images/about-background.svg) !important;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -421,8 +419,6 @@
 .about-me-banner {
   position: relative;
   left: 57.64%;
-
-  /* right: 39%; */
   right: -99.81%;
   top: 15%;
   bottom: 43%;
@@ -506,16 +502,9 @@
   color: #fff;
 }
 
-/* form */
-
-/* .input-box{
-    height: ;
-  } */
 .bottom {
   display: flex;
   flex-direction: column;
-
-  /* align-items: flex-start; */
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
   padding-left: 1.475rem;
@@ -550,8 +539,6 @@
 
 .input-box {
   height: 2rem;
-
-  /* border-bottom: 1px solid #dbd8d7; */
   display: flex;
   align-items: center;
   color: #979493;
