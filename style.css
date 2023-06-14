@@ -552,7 +552,7 @@
 
 .input-box {
   height: 2rem;
-  
+
   /* border-bottom: 1px solid #dbd8d7; */
   display: flex;
   align-items: center;
@@ -609,9 +609,10 @@
   color: #fff;
   letter-spacing: 0.03em;
   border: none;
-  transition: all .05s;
+  transition: all 0.05s;
 }
-.contact-btn:hover{
+
+.contact-btn:hover {
   color: #f55800;
   background: #fff5e1;
   border: 1px solid #f55800;
