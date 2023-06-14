@@ -96,9 +96,9 @@
   align-items: flex-start;
   padding: 8rem  1.5rem;
   gap: 0.75rem;
-  overflow: hidden;
+  overflow: hidden ;
   text-decoration: none;
-  background: url('/Assets/images/Base.png');
+  background: url('/Assets/images/Base.png') !important;
   background-size: cover;
 }
 
@@ -302,7 +302,7 @@
 
 .item2 {
   display: flex;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 700.94%), url(/Assets/images/backimage.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 700.94%), url(/Assets/images/backimage.png) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -381,7 +381,7 @@
 
 /* about section */
 .about-container {
-  background: url(/Assets/images/about-background.svg);
+  background: url(/Assets/images/about-background.svg) !important;
   background-size: cover;
   display: flex;
   flex-direction: column;
