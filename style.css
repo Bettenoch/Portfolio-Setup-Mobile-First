@@ -84,6 +84,9 @@
   display: none;
 }
 
+
+
+/* Headline section */
 .hero-container {
   width: 100%;
   height: 100vh;
@@ -549,8 +552,8 @@
 
 .input-box {
   height: 2rem;
-  width: 100%;
-  border-bottom: 1px solid #dbd8d7;
+  
+  /* border-bottom: 1px solid #dbd8d7; */
   display: flex;
   align-items: center;
   color: #979493;
@@ -559,11 +562,14 @@
 
 .input-box input {
   border: none;
+  outline: none;
+  width: 100%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.94rem;
   padding: 0.75rem;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 .input-area {
@@ -572,6 +578,8 @@
 
 .input-area textarea {
   border: none;
+  outline: none;
+  width: 100%;
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
@@ -601,6 +609,12 @@
   color: #fff;
   letter-spacing: 0.03em;
   border: none;
+  transition: all .05s;
+}
+.contact-btn:hover{
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
 }
 
 /* footer */
