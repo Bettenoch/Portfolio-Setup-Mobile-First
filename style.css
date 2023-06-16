@@ -590,6 +590,9 @@
   
 }
 @media screen and (min-width:850px){
+  .grid-desktop{
+    grid-gap: 2rem;
+}
   .img-holder img{
       min-width: 26.5rem;
       min-height: 22rem;
