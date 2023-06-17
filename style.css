@@ -213,11 +213,26 @@
 .background-image {
   overflow-y: hidden;
   position: absolute;
-  left: 60.74%;
+  left: 66.94%;
   bottom: -10%;
 }
 .dekstop-banner{
   display: none;
+}
+@media screen and (min-width:450px) {
+  .background-image {
+    left: 73.74%;
+  }
+}
+@media screen and (min-width:550px) {
+  .background-image {
+    left: 77.74%;
+  }
+}
+@media screen and (min-width:650px) {
+  .background-image {
+    left: 80.74%;
+  }
 }
 @media screen and (min-width:768px){
   .background-image{
@@ -555,6 +570,7 @@
   .grid-line-text{
     top: -50%;
     transform: translateY(50%);
+    border-bottom: 0.122rem solid #212121;
   }
   .tags {
     gap: 0.2rem;
@@ -688,7 +704,7 @@
 }
 .about-me-banner {
   position: relative;
-  left: 57.64%;
+  left: 68.64%;
 
   /* right: 39%; */
   right: -99.81%;
@@ -700,6 +716,16 @@
  
   border-top: 2px solid #b1a9a9;
   margin: 1.5rem;
+}
+@media screen and (min-width: 450px){
+  .about-me-banner{
+    left:76.64%;
+  }
+}
+@media screen and (min-width: 600px){
+  .about-me-banner{
+    left:82.64%;
+  }
 }
 /* desktop design */
 
@@ -864,9 +890,6 @@
 
 /* form */
 
-/* .input-box{
-    height: ;
-  } */
 .bottom {
   display: flex;
   flex-direction: column;
@@ -1008,6 +1031,9 @@
     gap: 4rem;
     padding-left: 4rem;
     
+  }
+  .contact-upper-bar p {
+    color: #262626;
   }
   footer{
     max-height: 4rem;
