@@ -159,9 +159,18 @@
   gap: 0.75rem;
   overflow: hidden;
   text-decoration: none;
-  background: url('./assets/images/Base.png');
-  background-size: cover;
+  background-color: #1c1a19 !important;
+  background-image: url('./assets/images/Illustration.svg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 99.99% 120%;
   position: relative;
+}
+
+@media screen and (max-width: 420px) {
+  .headline-text {
+    max-width: 18rem;
+  }
 }
 
 .headline-content {
@@ -201,7 +210,6 @@
   line-height: 1.5rem;
   color: var(--grey-white);
   padding-bottom: 1rem;
-  position: relative;
 }
 
 .socialmedia {
@@ -250,6 +258,12 @@
     display: none;
   }
 
+  .headline-container {
+    background-image: url('./assets/images/desktop header2.svg');
+    background-position: 99.99% 60%;
+    background-size: contain;
+  }
+
   .dekstop-banner {
     display: flex;
     position: absolute;
@@ -260,7 +274,7 @@
   }
 
   .headline-text {
-    max-width: 25rem;
+    max-width: 22rem;
     padding-top: 2rem;
     flex-shrink: 1;
   }
@@ -489,6 +503,11 @@
   border: 1px solid #f55800;
 }
 
+.btn:active {
+  color: #fff;
+  background: #f55800;
+}
+
 .item2 {
   display: flex;
   width: 100%;
@@ -552,7 +571,7 @@
   text-decoration: none;
   justify-content: center;
   padding: 0.75rem;
-  background: #ff6b00;
+  background: c;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -570,6 +589,11 @@
   border: 1px solid #f55800;
 }
 
+.btn2-holder:active {
+  color: #fff5e1 !important;
+  background: #f55800;
+}
+
 @media screen and (min-width: 768px) {
   .grid-desktop {
     display: grid;
@@ -579,14 +603,10 @@
 
   .content-head :nth-child(1) {
     content-visibility: none;
-
-    /* display: none; */
   }
 
   .content-head :nth-child(2) {
     display: inherit;
-
-    /* width: 100%; */
     flex-grow: 1;
   }
 
@@ -706,8 +726,9 @@
 
 /* about section */
 .about-container {
-  background: url("./assets/images/about-background.svg");
-  background-size: cover;
+  background-color: #1c1a19 !important;
+
+  /* background-size: contain; */
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
@@ -715,8 +736,12 @@
 }
 
 .about {
-  display: flex;
+  background-image: url('./assets/images/About Me Background.svg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 99.99% 99.99%;
   position: relative;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
@@ -724,6 +749,28 @@
   padding-bottom: 0.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.about-top {
+  max-width: 30rem;
+}
+
+@media screen and (max-width: 550px) {
+  .about-top {
+    max-width: 24rem;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  .about-top {
+    max-width: 22rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-top {
+    max-width: 18rem;
+  }
 }
 
 .about h4 {
@@ -786,6 +833,11 @@
     display: none;
   }
 
+  .about {
+    background-image: url('./assets/images/aboutme-dekstop23.svg');
+    background-position: 180.99% 99.99%;
+  }
+
   .about-me-desktop {
     display: flex;
     position: absolute;
@@ -808,6 +860,11 @@
     max-height: 18rem;
   }
 
+  .about {
+    background-image: url('./assets/images/aboutme-dekstop23.svg');
+    background-position: 140.99% 99.99%;
+  }
+
   .about-top {
     max-width: 30rem;
     max-height: 36rem;
@@ -819,6 +876,11 @@
     left: 61%;
     max-width: 38rem;
     max-height: 20rem;
+  }
+
+  .about {
+    background-image: url('./assets/images/aboutme-dekstop23.svg');
+    background-position: 99.99% 99.99%;
   }
 
   .about-top {
