@@ -1043,6 +1043,8 @@
   align-items: center;
   color: #979493;
   padding: 1.5rem 1.5rem 1.437rem  1.562rem;
+  transition: all 0.5s ease-out;
+
 }
 
 form {
