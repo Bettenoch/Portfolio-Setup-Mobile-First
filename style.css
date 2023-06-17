@@ -43,11 +43,13 @@
   font-weight: 700;
   font-size: 1.6rem;
   margin-right: auto;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.mylogo:hover{
+
+.mylogo:hover {
   transform: scale(0.7);
 }
+
 .mylogo a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -71,9 +73,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
-  
 }
-
 
 .menu_icons {
   display: flex;
@@ -110,7 +110,6 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    
   }
 
   .nav-list li {
@@ -119,12 +118,8 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-    
   }
-  .nav-list li a:hover,
-  .nav-list li a:focus {
-    color: #ff6b00 !important;
-  }
+
 
   .nav-list li a {
     font-family: 'Inter', sans-serif;
@@ -133,6 +128,11 @@
     font-size: 0.9375rem;
     color: #fff !important;
     transition: all 0.5s ease-out;
+  }
+
+  .nav-list li a:hover,
+  .nav-list li a:focus {
+    color: #ff6b00 !important;
   }
 }
 
@@ -353,11 +353,13 @@
   padding: 1.5rem;
   flex: 1;
 }
-.grid-desktop{
+
+.grid-desktop {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
+
 .item0 {
   display: flex;
   flex-direction: column;
@@ -575,21 +577,24 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
   }
+
   .content-head :nth-child(1) {
     content-visibility: none;
+
     /* display: none; */
   }
+
   .content-head :nth-child(2) {
     display: inherit;
+
     /* width: 100%; */
     flex-grow: 1;
- 
   }
+
   .btn2-holder {
     display: none;
   }
-  
-  
+
   .item0 {
     flex-direction: row;
   }
@@ -959,7 +964,6 @@
   align-items: center;
   padding-bottom: 6rem;
   gap: 1.5rem;
- 
 }
 
 .contact-upper-bar p {
@@ -979,9 +983,11 @@
   color: #979493;
   padding: 1.5rem 1.5rem 1.437rem  1.562rem;
 }
-form{
+
+form {
   width: 100%;
 }
+
 .input-box input {
   border: none;
   width: 100%;
@@ -995,7 +1001,6 @@ form{
 
 .input-area {
   padding: 1.5rem 1.5rem 1.437rem  1.562rem;
-  
 }
 
 .input-area textarea {
@@ -1081,7 +1086,7 @@ form{
 
   .contact-upper-bar p {
     color: #262626;
-    text-align:start;
+    text-align: start;
   }
 
   footer {
@@ -1132,6 +1137,7 @@ form{
     justify-content: flex-start;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .bottomcontainer {
     display: flex;
