@@ -43,8 +43,11 @@
   font-weight: 700;
   font-size: 1.6rem;
   margin-right: auto;
+  transition: all .5s ease-in-out;
 }
-
+.mylogo:hover{
+  transform: scale(0.7);
+}
 .mylogo a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -68,7 +71,9 @@
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
+  
 }
+
 
 .menu_icons {
   display: flex;
@@ -105,7 +110,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff !important;
+    
   }
 
   .nav-list li {
@@ -114,6 +119,11 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+    
+  }
+  .nav-list li a:hover,
+  .nav-list li a:focus {
+    color: #ff6b00 !important;
   }
 
   .nav-list li a {
@@ -122,6 +132,7 @@
     font-weight: 600;
     font-size: 0.9375rem;
     color: #fff !important;
+    transition: all 0.5s ease-out;
   }
 }
 
@@ -149,7 +160,7 @@
   gap: 0.75rem;
   overflow: hidden;
   text-decoration: none;
-  background: url('/Assets/images/Base.png');
+  background: url('./assets/images/Base.png');
   background-size: cover;
   position: relative;
 }
@@ -367,7 +378,7 @@
   padding-top: 2.5rem;
 }
 
-.title-text h1 {
+.title-text h3 {
   color: #1c1a19;
   font-family: 'Crete Round', serif;
   font-style: normal;
@@ -476,7 +487,7 @@
 .item2 {
   display: flex;
   width: 100%;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 700.94%), url(/Assets/images/backimage.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 700.94%), url("./assets/images/backimage.png");
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
@@ -672,7 +683,7 @@
 
 /* about section */
 .about-container {
-  background: url(/Assets/images/about-background.svg);
+  background: url("./assets/images/about-background.svg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -692,7 +703,7 @@
   padding-right: 1.5rem;
 }
 
-.about h2 {
+.about h4 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -920,6 +931,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .contact-upper-bar {
@@ -928,6 +940,7 @@
   align-items: center;
   padding-bottom: 6rem;
   gap: 1.5rem;
+ 
 }
 
 .contact-upper-bar p {
@@ -947,7 +960,9 @@
   color: #979493;
   padding: 1.5rem 1.5rem 1.437rem  1.562rem;
 }
-
+form{
+  width: 100%;
+}
 .input-box input {
   border: none;
   width: 100%;
@@ -961,6 +976,7 @@
 
 .input-area {
   padding: 1.5rem 1.5rem 1.437rem  1.562rem;
+  
 }
 
 .input-area textarea {
@@ -974,6 +990,7 @@
   resize: none;
   border-radius: 0.625rem;
   height: 7.125rem;
+  width: 100%;
 }
 
 .submit {
@@ -981,6 +998,7 @@
   text-decoration: none;
   border: none;
   justify-content: center;
+  padding: 1.5rem 1.5rem 1.437rem  1.562rem;
 }
 
 .contact-btn {
@@ -1037,12 +1055,14 @@
   .bottomcontainer {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     gap: 4rem;
     padding-left: 4rem;
   }
 
   .contact-upper-bar p {
     color: #262626;
+    text-align:start;
   }
 
   footer {
@@ -1052,11 +1072,12 @@
   .contact-upper-bar {
     max-width: 24rem;
     max-height: 4rem;
+    align-items: flex-start;
   }
 
   .contact-bottom-bar {
-    max-width: 24rem;
-    max-height: 20rem;
+    min-width: 24rem;
+    min-height: 20rem;
   }
 
   .home-indicator {
@@ -1076,21 +1097,40 @@
   .bottomcontainer {
     display: flex;
     flex-direction: row;
-    gap: 8rem;
+  }
+
+  .contact-upper-bar {
+    max-width: 24rem;
+    max-height: 4rem;
+  }
+
+  .contact-bottom-bar {
+    min-width: 24rem;
+    min-height: 20rem;
+  }
+
+  .submit {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bottomcontainer {
+    display: flex;
+    flex-direction: row;
     padding-left: 8.6rem;
   }
 
   .contact-upper-bar {
     max-width: 24rem;
-    max-height: 16rem;
+    max-height: 6rem;
   }
 
   .contact-bottom-bar {
-    max-width: 42rem;
-    max-height: 20rem;
+    min-width: 32rem;
+    min-height: 20rem;
   }
 
   .submit {
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
