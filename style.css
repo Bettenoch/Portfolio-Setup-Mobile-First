@@ -1097,6 +1097,7 @@ form {
   letter-spacing: 0.03em;
   border: none;
 }
+
 .contact-btn:hover {
   color: #f55800;
   background: #fff5e1;
@@ -1107,6 +1108,7 @@ form {
   color: #fff;
   background: #f55800;
 }
+
 /* footer */
 .contact_socialmedia {
   display: flex;
@@ -1181,7 +1183,6 @@ form {
   .submit {
     justify-content: flex-start;
   }
-  
 
   .contact_socialmedia {
     padding-bottom: 0;
