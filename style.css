@@ -31,8 +31,6 @@
   padding-bottom: 0.7rem;
   padding-left: 1.5rem;
   padding-right: 1.6rem;
-
-  /* margin: 0; */
   z-index: 1001;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -97,8 +95,6 @@
   .mylogo {
     font-size: 1.25rem;
     padding-left: 4rem;
-
-    /* line-height: 20px; */
   }
 
   .menu_icons {
@@ -142,8 +138,6 @@
 .hero-container {
   width: 100%;
   height: 100vh;
-
-  /* position: relative; */
 }
 
 .headline-container {
@@ -165,8 +159,6 @@
   flex-direction: column;
   z-index: 1000;
   overflow: hidden;
-
-  /* flex-wrap: wrap; */
   position: absolute;
 }
 
@@ -198,8 +190,6 @@
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--grey-white);
-
-  /* margin: 1rem 0; */
   padding-bottom: 1rem;
   position: relative;
 }
@@ -257,10 +247,6 @@
     max-height: 48.03rem;
     left: 48%;
     top: 0%;
-
-    /* margin-left: 20%; */
-
-    /* margin-bottom: 80%; */
   }
 
   .headline-text {
@@ -284,8 +270,6 @@
   .socialmedia-icons {
     display: flex;
     flex-direction: column;
-
-    /* gap: 1.5rem; */
   }
 
   .description-text {
@@ -374,9 +358,6 @@
 
 .grid-line-text {
   border-bottom: 0.122rem solid #c9b7b7;
-
-  /* content: ".";
-  visibility: hidden; */
 }
 
 .title-text {
@@ -572,7 +553,6 @@
   border: 1px solid #f55800;
 }
 
-/* desktop view */
 
 @media screen and (min-width: 768px) {
   .grid-desktop {
@@ -744,8 +724,6 @@
 .about-me-banner {
   position: relative;
   left: 68.64%;
-
-  /* right: 39%; */
   right: -99.81%;
   top: 15%;
   bottom: 43%;
@@ -903,10 +881,7 @@
     justify-content: center;
     padding-top: 4rem;
     padding-right: 3rem;
-    padding-left: 2rem;
-
-    /* padding-left: 0;
-    margin-left: 0; */
+    padding-left: 2rem;/
   }
 
   .skills1 {
@@ -1042,12 +1017,6 @@
 
 .footerr {
   border-top: 1px solid #dfe1e6;
-
-  /* left: 0;
-  right: 0;
-  top: 0;
-  margin: 0;
-  padding: 0; */
 }
 
 .home-indicator {
