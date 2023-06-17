@@ -726,6 +726,7 @@
 /* about section */
 .about-container {
   background-color: #1c1a19 !important;
+
   /* background-size: contain; */
   display: flex;
   flex-direction: column;
@@ -1056,7 +1057,6 @@ form {
   font-weight: 400;
   font-size: 0.94rem;
   padding: 0.75rem;
-  border-bottom: 1px solid #dbd8d7;
 }
 
 .input-area {
@@ -1076,7 +1076,6 @@ form {
   resize: none;
   border-radius: 0.625rem;
   height: 7.125rem;
-  width: 100%;
 }
 
 .submit {
@@ -1098,12 +1097,6 @@ form {
   letter-spacing: 0.03em;
   border: none;
   transition: all 0.05s;
-}
-
-.contact-btn:hover {
-  color: #f55800;
-  background: #fff5e1;
-  border: 1px solid #f55800;
 }
 
 .contact-btn:hover {
