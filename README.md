@@ -64,7 +64,7 @@ and contact information. As most industry's are looking for digital precense, a 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://bettenoch.github.io/Portfolio-Setup-Mobile-First)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
