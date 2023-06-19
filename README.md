@@ -30,7 +30,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -63,6 +62,8 @@ and contact information. As most industry's are looking for digital precense, a 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://bettenoch.github.io/Portfolio-Setup-Mobile-First)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,8 +145,8 @@ You can deploy this project using: GitHub Pages,
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Desktop Version]**
-- [ ] **[Contact Section]**
+- [ ] **[Will add menu pop-up window]**
+- [ ] **[style it more beautiful]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
