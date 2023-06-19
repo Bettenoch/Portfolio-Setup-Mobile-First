@@ -511,6 +511,7 @@
 .item2 {
   display: flex;
   width: 100%;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 700.94%), url("./assets/images/backimage.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1042,7 +1043,6 @@
   align-items: center;
   color: #979493;
   padding: 1.5rem 1.5rem 1.437rem  1.562rem;
-  transition: all 0.5s ease-out;
 }
 
 form {
@@ -1060,18 +1060,12 @@ form {
   padding: 0.75rem;
 }
 
-.input-box input:hover {
-  transform: translate(10px);
-}
-
 .input-area {
   padding: 1.5rem 1.5rem 1.437rem  1.562rem;
 }
 
 .input-area textarea {
   border: none;
-  outline: none;
-  width: 100%;
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
@@ -1081,6 +1075,7 @@ form {
   resize: none;
   border-radius: 0.625rem;
   height: 7.125rem;
+  width: 100%;
 }
 
 .submit {
@@ -1101,7 +1096,6 @@ form {
   color: #fff;
   letter-spacing: 0.03em;
   border: none;
-  transition: all 0.05s;
 }
 
 .contact-btn:hover {
