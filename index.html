@@ -20,21 +20,24 @@
 </head>
 <body>
     <header class="icons">
-        <nav class="nav-container">
-            <div class="mylogo">
-                 <a href="#">BETT. ENOCK</a>
+        <nav  class="nav-container">
+            <div class="menu-items">
+                <div class="mylogo">
+                    <a href="#">BETT. ENOCK</a>
+               </div>
+               <button id="hamburger-toggle" class="menu_icons">
+                   <a href="#"><img class="harmburgericon" src="./assets/images/Harmburger Menu.svg" alt="Menuicon"></a>
+                   <a href="#"><img class="closeicon" src="./assets/images/Closeicon.svg" alt="Closeicon"></a>
+               </button>
             </div>
-            
-            <ul class="nav-list">
+           
+            <ul id="menulist" class="nav-list">
                 <li> <a href="#" class="active">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#"><img src="./assets/images/navbar-menu.svg" alt="mail"></a></li>
+                <li class="email-holder"><a href="#"><img src="./assets/images/navbar-menu.svg" alt="mail"></a></li>
             </ul>
-            <div class="menu_icons">
-                <a href="#"><img class="harmburgericon" src="./assets/images/Harmburger Menu.svg" alt="Closeicon"></a>
-                <a href="#"><img class="closeicon" src="./assets/images/Closeicon.svg" alt="Closeicon"></a>
-            </div>
+            
         </nav>
     </header>
 
@@ -404,6 +407,6 @@
             </section>
 
     </section>
-
+    <script src="script.js"></script>
 </body>
 </html>

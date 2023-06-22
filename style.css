@@ -23,7 +23,7 @@
 .nav-container {
   background: var(--lighter-grey);
   width: 100%;
-  display: flex;
+  display: block;
   align-items: center;
   position: fixed;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
@@ -34,6 +34,9 @@
   z-index: 1001;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+}
+.menu-items{
+  display: flex;
 }
 
 .mylogo {
@@ -60,24 +63,50 @@
 }
 
 .nav-list {
-  display: flex;
-  text-decoration: none;
-  padding-right: 4rem;
-}
-
-.nav-list li {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+}
+.nav-list.open {
+  display: flex;
+}
+.nav-list.open .menu_icons .harmburgericon{
+  display: none;
+}
+.nav-list .email-holder{
+  display: none;
+}
+.nav-list li {
+  /* left: 44px; */
+  /* display: none; */
   list-style: none;
-  padding: 1rem;
+  border-bottom: 1px solid #6f6c6b;
+  padding: 1rem 1rem 1rem 4rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
+  transition: all 0.8s ease-out;
 }
+
+.nav-list li a{
+  color: #fff5e1;
+  
+}
+.nav-list li a:hover,
+.nav-list li a:focus {
+    color: #ff6b00 !important;
+  }
 
 .menu_icons {
   display: flex;
   margin: 0;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 .menu_icons,
@@ -94,7 +123,8 @@
 @media screen and (min-width: 768px) {
   .nav-container {
     min-width: 4.5rem;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   .mylogo {
@@ -108,8 +138,11 @@
 
   .nav-list {
     display: flex;
+    flex-direction: row;
     align-items: center;
     text-decoration: none;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
 
   .nav-list li {
@@ -118,6 +151,7 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+    border-bottom: none
   }
 
   .nav-list li a {
@@ -129,10 +163,7 @@
     transition: all 0.5s ease-out;
   }
 
-  .nav-list li a:hover,
-  .nav-list li a:focus {
-    color: #ff6b00 !important;
-  }
+  
 }
 
 @media screen and (min-width: 1020px) {
