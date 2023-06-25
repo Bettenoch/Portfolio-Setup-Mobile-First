@@ -482,6 +482,7 @@
 .btn-holder {
   text-decoration: none;
   border: none;
+  gap: 1rem;
 }
 
 .btn {
@@ -568,10 +569,11 @@
 
 .btn2-holder {
   display: flex;
+  cursor: pointer;
   text-decoration: none;
   justify-content: center;
   padding: 0.75rem;
-  background: c;
+  background: var(--orange-color);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -581,6 +583,7 @@
   letter-spacing: 0.03em;
   border: none;
   width: 100%;
+  background-color: #8c8e92;
 }
 
 .btn2-holder:hover {
@@ -601,18 +604,11 @@
     grid-gap: 1rem;
   }
 
-  .content-head :nth-child(1) {
-    content-visibility: none;
-  }
 
-  .content-head :nth-child(2) {
-    display: inherit;
-    flex-grow: 1;
-  }
 
-  .btn2-holder {
+  /* .btn2-holder {
     display: none;
-  }
+  } */
 
   .item0 {
     flex-direction: row;
@@ -1230,4 +1226,110 @@ form {
   .submit {
     justify-content: flex-start;
   }
+}
+
+/* Popup section */
+
+.popup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 2.4rem;
+  width: 100%;
+  height: 100vh;
+  z-index: 1001;
+  top: 0;
+  backdrop-filter: blur(4px);
+  position: fixed;
+}
+
+.popup-holder{
+  position: fixed;
+  padding: 1.5rem;
+  overflow: hidden;
+  max-width: 75%;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background:#dfe1e6;
+  border-radius: 8px
+ ;
+  top: 5%;
+  /* margin: auto 2.4rem; */
+  
+}
+
+.popup-top{
+  align-items: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.project-header{
+  display: flex;
+  gap: 30rem;
+  justify-content:space-between;
+}
+.project-header h3{
+  display: flex;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: #172b4d;
+  font-family: 'Crete Round', sans-serif;
+}
+.project-header .close-btn{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.close-btn .popup-close-icon{
+  width: 3.3rem;
+  color: #d60404;
+}
+.project-details{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  
+}
+.project-details li{
+  border: 1px solid #979493;
+  text-transform: lowercase;
+  padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+}
+.popup-bottom{
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+.overflow{
+  max-width: 70%;
+}
+.popup-btn{
+  align-self: self-end;
+ 
+}
+.popup-btn .btn{
+  font-size: 1rem;
+  /* padding: 0.95rem; */
+}
+.image-description{
+ display: flex;
+ flex-direction: column;
+ max-width: 30%;
+}
+.image-description .image-text{
+  font-family: 'Inter', sans-serif;
+  color: #344563 ; 
+  font-weight: 400;
+  font-size: 1rem;
+  padding-bottom: 2rem;
 }
