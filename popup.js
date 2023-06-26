@@ -124,8 +124,8 @@ function popup(project) {
                 </ul>
             </article>
             <article class="popup-bottom">
-                <div class="overflow ">
-                    <img class="popup-image" src="./assets/images/Popupbg.svg" alt="popup-image" />
+                <div class="popup-bottom-image">
+                    <img class="popup-image" src="./assets/images/popupbg2.png" alt="popup-image" />
                 </div>
                 <div class="image-description">
                     <p class="image-text ">
@@ -156,13 +156,15 @@ function popup(project) {
 const overfloww = document.querySelector('.popup');
 const popupclick = document.querySelectorAll("[id^='project-button-']");
 popupclick.forEach((button, index) => {
-    button.addEventListener('click', () =>{
+    button.addEventListener('click', (eve) =>{
+        eve.preventDefault();
         
         const project = projects[index];
         popup(project);
         const closePopup = document.querySelector('.close-btn');
 
-        const exitPopup = () =>{
+        const exitPopup = (event) =>{
+            event.preventDefault();
             popupWindow.remove();
         };
 
