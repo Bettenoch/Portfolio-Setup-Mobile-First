@@ -36,7 +36,7 @@
   backdrop-filter: blur(5px);
 }
 
-.menu-items{
+.menu-items {
   display: flex;
   justify-content: space-between;
 }
@@ -72,19 +72,23 @@
   padding-top: 5rem;
   padding-bottom: 20rem;
 }
+
 .nav-list.open {
   display: flex;
 }
-.nav-list.open .menu_icons .harmburgericon{
-  display: none;
-}
-.nav-list .email-holder{
+
+.nav-list.open .menu_icons .harmburgericon {
   display: none;
 }
 
-.nav-list.exit{
+.nav-list .email-holder {
   display: none;
 }
+
+.nav-list.exit {
+  display: none;
+}
+
 .nav-list li {
   list-style: none;
   border-bottom: 1px solid #6f6c6b;
@@ -95,21 +99,18 @@
   font-size: 2rem;
   transition: all 0.8s ease-out;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
-.offlogo{
+
+.offlogo {
   visibility: hidden;
 }
 
-.nav-list li a{
+.nav-list li a {
   color: #fff5e1;
-  
 }
-.nav-list li a:hover,
-.nav-list li a:focus {
-    color: #ff6b00 !important;
-  }
 
 .menu_icons {
   border: none;
@@ -118,20 +119,10 @@
 }
 
 .menu_icons,
-.harmburgericon .closeicon  {
+.harmburgericon .closeicon {
   top: 2%;
   width: 1.2rem;
   height: 0.75rem;
-}
-
- .menu_icons .closeicon img {
-  display: none;
-}
-
-.closeicon.hide img {
-  display: flex;
-  margin-top: 1rem;
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -155,8 +146,8 @@
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .nav-list li {
@@ -165,12 +156,13 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-    border-bottom: none
+    border-bottom: none;
   }
 
-  .nav-list .email-holder{
+  .nav-list .email-holder {
     display: flex;
   }
+
   .nav-list li a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -179,8 +171,6 @@
     color: #fff !important;
     transition: all 0.5s ease-out;
   }
-
-  
 }
 
 @media screen and (min-width: 1020px) {
@@ -475,6 +465,15 @@
 .img-holder img {
   max-width: 20.4rem;
   max-height: 14.8rem;
+}
+
+.menu_icons .closeicon img {
+  display: none;
+}
+
+.closeicon.hide img {
+  display: flex;
+  margin-top: 1rem;
 }
 
 .text-group {
@@ -1278,4 +1277,9 @@ form {
   .submit {
     justify-content: flex-start;
   }
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus {
+  color: #ff6b00 !important;
 }
