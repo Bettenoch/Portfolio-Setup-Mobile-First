@@ -1,5 +1,4 @@
 /* eslint-disable linebreak-style */
-// CONSTVARIABLES
 const hamburgertoggle = document.querySelector('#hamburger-toggle');
 const navbar = document.querySelector('#menulist');
 const menu = document.querySelector('#menuicon');
@@ -8,7 +7,6 @@ const logo = document.querySelector('.mylogo');
 const navitems = document.querySelectorAll('.navlink');
 
 function onhamburgerclick() {
-  // hamburgertoggle.classList.toggle('open')
   menu.classList.add('hidden');
   logo.classList.add('offlogo');
 
