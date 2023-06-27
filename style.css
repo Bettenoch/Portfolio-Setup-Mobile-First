@@ -37,6 +37,7 @@
 }
 .menu-items{
   display: flex;
+  justify-content: space-between;
 }
 
 .mylogo {
@@ -80,8 +81,6 @@
   display: none;
 }
 .nav-list li {
-  /* left: 44px; */
-  /* display: none; */
   list-style: none;
   border-bottom: 1px solid #6f6c6b;
   padding: 1rem 1rem 1rem 4rem;
@@ -90,6 +89,12 @@
   font-weight: 700;
   font-size: 2rem;
   transition: all 0.8s ease-out;
+}
+.hidden{
+  display: none;
+}
+.offlogo{
+  display: none; /*visibility: hidden*/
 }
 
 .nav-list li a{
@@ -102,22 +107,26 @@
   }
 
 .menu_icons {
-  display: flex;
-  margin: 0;
   border: none;
   outline: none;
   background: none;
 }
 
 .menu_icons,
-.harmburgericon {
-  top: 0.375%;
+.harmburgericon .closeicon  {
+  top: 2%;
   width: 1.2rem;
   height: 0.75rem;
 }
 
-.menu_icons .closeicon {
+ .menu_icons .closeicon img {
   display: none;
+}
+
+.menu_icons.open .closeicon img {
+  display: flex;
+  margin-top: 1rem;
+  
 }
 
 @media screen and (min-width: 768px) {
