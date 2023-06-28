@@ -20,21 +20,24 @@
 </head>
 <body>
     <header class="icons">
-        <nav class="nav-container">
-            <div class="mylogo">
-                 <a href="#">BETT. ENOCK</a>
+        <nav  class="nav-container">
+            <div class="menu-items">
+                <div class="mylogo" >
+                    <a href="#">BETT. ENOCK</a>
+               </div>
+               <button id="hamburger-toggle" class="menu_icons">
+                   <a id="menuicon" href="#"><img class="harmburgericon" src="./assets/images/Harmburger Menu.svg" alt="Menuicon"></a>
+                   <a id="closeicon" class="closeicon" href="#"><img  src="./assets/images/Closeicon.svg" alt="Closeicon"></a>
+               </button>
             </div>
-            
-            <ul class="nav-list">
-                <li> <a href="#" class="active">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#"><img src="./assets/images/navbar-menu.svg" alt="mail"></a></li>
+           
+            <ul id="menulist" class="nav-list">
+                <li class="navlink"> <a href="#about" class="active">About</a></li>
+                <li class="navlink"><a href="#work">Portfolio</a></li>
+                <li class="navlink"><a href="#contact">Contact</a></li>
+                <li class="email-holder"><a href="#"><img src="./assets/images/navbar-menu.svg" alt="mail"></a></li>
             </ul>
-            <div class="menu_icons">
-                <a href="#"><img class="harmburgericon" src="./assets/images/Harmburger Menu.svg" alt="Closeicon"></a>
-                <a href="#"><img class="closeicon" src="./assets/images/Closeicon.svg" alt="Closeicon"></a>
-            </div>
+            
         </nav>
     </header>
 
@@ -72,7 +75,7 @@
             </article>
             
         </section>
-        <div class="grid-container">
+        <div class="grid-container" id="work">
             <div class="item0">
                 <div class="title-text">
                     <h3>My Recent Works</h3>
@@ -95,7 +98,7 @@
      
         </div>
         <section class="main-container">
-            <article class="about-container">
+            <article class="about-container" id="about">
                 <article class="about">
                     <article class="about-top">
                         <h4 class="about-p-text" >About Me</h4>
@@ -165,7 +168,7 @@
             </article>
             <!-- contact section -->
             <section class="main-container bottom" >
-                <section class="bottomcontainer">
+                <section class="bottomcontainer" id="contact">
                     <div class="contact-upper-bar">
                         <p class="contact-heading">
                             I'm always interested in hearing 
@@ -221,5 +224,6 @@
     </section>
     <script src="popup.js"></script>
     <script src="popup2.js"></script>
+
 </body>
 </html>
