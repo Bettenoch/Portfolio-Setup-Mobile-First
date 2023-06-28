@@ -428,10 +428,10 @@
 .img-holder img {
   max-width: 20.4rem;
   max-height: 14.8rem;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
-.img-holder img:hover{
+.img-holder img:hover {
   transform: scale(1.5);
 }
 
@@ -1235,7 +1235,7 @@ form {
 
 /* Popup section */
 
-.popup{
+.popup {
   display: flex;
   backdrop-filter: blur(4px);
   align-items: center;
@@ -1245,11 +1245,10 @@ form {
   height: 100vh;
   z-index: 1001;
   top: 0;
-  
   position: fixed;
 }
 
-.popup-holder{
+.popup-holder {
   position: fixed;
   padding: 1.5rem;
   overflow: hidden;
@@ -1260,177 +1259,171 @@ form {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background:#dfe1e6;
+  background: #dfe1e6;
   border-radius: 8px;
   top: 5%;
 }
 
-.popup-top{
+.popup-top {
   align-items: flex-start;
   width: 100%;
   display: flex;
   flex-direction: column;
-  
 }
-.project-header{
+
+.project-header {
+  width: 100%;
   display: flex;
-  gap: 34rem;
+  justify-content: space-between;
 }
-.project-header h3{
+
+.project-header h3 {
   display: flex;
   font-size: 2rem;
   font-weight: 400;
   color: #172b4d;
   font-family: 'Crete Round', sans-serif;
 }
-.project-header .close-btn{
+
+.project-header .close-btn {
   border: none;
   background: none;
   cursor: pointer;
 }
-.close-btn .popup-close-icon{
+
+.close-btn .popup-close-icon {
   width: 3.3rem;
 }
-.project-details{
+
+.project-details {
   display: flex;
   align-items: center;
   cursor: pointer;
   gap: 0.5rem;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  
 }
-.project-details li{
+
+.project-details li {
   border: 1px solid #979493;
   text-transform: lowercase;
   padding: 0.625rem 0.75rem 0.625rem 0.75rem;
 }
-.popup-bottom{
+
+.popup-bottom {
   display: flex;
   width: 100%;
   gap: 2rem;
   overflow: hidden;
 }
-.popup-bottom-image{
+
+.popup-bottom-image {
   overflow: hidden;
   width: 100%;
 }
-.popup-bottom-image .popup-image{
+
+.popup-bottom-image .popup-image {
   width: 100%;
   max-width: 100%;
-  transition: transform .5s ease;
-
+  transition: transform 0.5s ease;
 }
-.popup-bottom-image .popup-image:hover{
+
+.popup-bottom-image .popup-image:hover {
   transform: scale(1.5);
 }
-.popup-btn{
+
+.popup-btn {
   display: flex;
   gap: 1rem;
   margin-top: 48%;
 }
 
-.popup-btn .btn{
-  font-size: 1rem; 
+.popup-btn .btn {
+  font-size: 1rem;
 }
 
-.image-description{
- display: flex;
- flex-direction: column;
- max-width: 40%;
+.image-description {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
 }
-.image-description .image-text{
+
+.image-description .image-text {
   font-family: 'Inter', sans-serif;
-  color: #344563 ; 
+  color: #344563;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
   padding-bottom: 2rem;
 }
+
 @media screen and (max-width: 768px) {
-  .popup-holder{
+  .popup-holder {
     max-width: 85%;
-  }
-
-  .popup{
-    margin: auto 0.5rem;
-   
-  }
-
-  .popup-bottom{
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .popup-bottom-image .popup-image{
-    max-width: 100%;
-  
-  }
-  .project-header h3{
-    font-size: 1.8rem;
-    
-  }
-  .popup-holder{
     height: 100%;
   }
-  .image-description{
 
-    max-width: 100%;
-   }
-  .project-header{
-    gap: 6rem !important;
+  .popup {
+    margin: auto 0.5rem;
   }
-  
-  .popup-btn{
+
+  .popup-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .popup-bottom-image .popup-image {
+    max-width: 100%;
+  }
+
+  .project-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .image-description {
+    max-width: 100%;
+  }
+
+  .popup-btn {
     margin-top: 5% !important;
   }
-  .popup-btn .btn{
-    font-size: 0.5rem; 
+
+  .popup-btn .btn {
+    font-size: 0.5rem;
     padding: 0;
   }
 }
+
 @media screen and (max-width: 450px) {
-  .project-header{
+  .project-header {
     gap: 2rem !important;
   }
 }
+
 @media screen and (max-width: 375px) {
-  .project-header{
+  .project-header {
     gap: 1rem !important;
   }
 }
+
 @media screen and (max-width: 1200px) {
-  .project-header{
-    gap: 22rem;
-  }
-  .popup-btn{
+  .popup-btn {
     margin-top: 30%;
   }
-  .popup-btn .btn{
-    font-size: 0.8rem; 
+
+  .popup-btn .btn {
+    font-size: 0.8rem;
     padding: 0.55rem;
   }
 }
+
 @media screen and (max-width: 1020px) {
-  .project-header{
-    gap: 12rem;
-  }
-  .popup-btn{
+  .popup-btn {
     margin-top: 15%;
   }
-  .popup-bottom-image .popup-image{
+
+  .popup-bottom-image .popup-image {
     max-height: 100%;
-  
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .project-header{
-    gap: 14rem;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .project-header{
-    gap: 8rem;
   }
 }
