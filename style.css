@@ -1377,6 +1377,7 @@ form {
 
 .popup-btn {
   display: flex;
+  width: 100%;
   gap: 1rem;
   margin-top: 48%;
 }
@@ -1406,6 +1407,12 @@ form {
     height: 100%;
   }
 
+  .popup-btn {
+    gap: 0;
+    justify-content: space-between;
+    margin-top: 5% !important;
+  }
+
   .popup {
     margin: auto 0.5rem;
   }
@@ -1427,37 +1434,11 @@ form {
   .image-description {
     max-width: 100%;
   }
-
-  .popup-btn {
-    margin-top: 5% !important;
-  }
-
-  .popup-btn .btn {
-    font-size: 0.5rem;
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .project-header {
-    gap: 2rem !important;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .project-header {
-    gap: 1rem !important;
-  }
 }
 
 @media screen and (max-width: 1200px) {
   .popup-btn {
     margin-top: 30%;
-  }
-
-  .popup-btn .btn {
-    font-size: 0.8rem;
-    padding: 0.55rem;
   }
 }
 
