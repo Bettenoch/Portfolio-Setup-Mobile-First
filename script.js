@@ -6,10 +6,10 @@ const close = document.querySelector('#closeicon');
 const logo = document.querySelector('.mylogo');
 const navitems = document.querySelectorAll('.navlink');
 
-function onhamburgerclick() {
+function onhamburgerclick(event) {
   menu.classList.add('hidden');
   logo.classList.add('offlogo');
-
+  event.preventDefault();
   if (!navbar.classList.contains('open')) {
     navbar.classList.add('open');
     close.classList.add('hide');

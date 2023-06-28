@@ -69,8 +69,8 @@
   flex-direction: column;
   justify-content: center;
   text-decoration: none;
-  padding-top: 5rem;
-  padding-bottom: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 1000rem;
 }
 
 .nav-list.open {
@@ -92,7 +92,7 @@
 .nav-list li {
   list-style: none;
   border-bottom: 1px solid #6f6c6b;
-  padding: 1rem 1rem 1rem 4rem;
+  padding: 1rem 1rem 1rem 1.5rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
