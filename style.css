@@ -222,7 +222,7 @@
 }
 
 .headline-text h1 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: var(--font-secondary);
   font-style: normal;
   font-weight: 400;
   font-size: 3.5rem;
@@ -1325,7 +1325,7 @@ form {
   font-size: 2rem;
   font-weight: 400;
   color: #172b4d;
-  font-family: 'Crete Round', sans-serif;
+  font-family: var(--font-secondary);
 }
 
 .project-header .close-btn {
@@ -1393,7 +1393,7 @@ form {
 }
 
 .image-description .image-text {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   color: #344563;
   font-weight: 400;
   font-size: 1rem;
