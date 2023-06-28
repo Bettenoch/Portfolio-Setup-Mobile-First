@@ -658,12 +658,6 @@
     grid-gap: 1rem;
   }
 
-
-
-  /* .btn2-holder {
-    display: none;
-  } */
-
   .item0 {
     flex-direction: row;
   }
@@ -1477,9 +1471,7 @@ form {
   }
 }
 
-
 .nav-list li a:hover,
 .nav-list li a:focus {
   color: #ff6b00 !important;
 }
-
