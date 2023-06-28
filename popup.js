@@ -4,8 +4,8 @@ const projects = [
 
     {
         name: 'Data Dashboard Healthcare',
-        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
-        image: "./assets/images/backimage.png",
+        languages: ['CSS', 'HTML', 'RUBY'],
+        image: "./assets/images/popupbg2.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
         liveLink: '',
@@ -14,8 +14,8 @@ const projects = [
 
     {
         name: 'Website Portfolio More',
-        languages: ['CSS', 'HTML', 'RUBY ON RAILS', ],
-        image: "./assets/images/backimage.png",
+        languages: ['CSS', 'HTML', 'RUBY', ],
+        image: "./assets/images/popupbg2.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
         liveLink: '',
@@ -24,8 +24,8 @@ const projects = [
 
     {
         name: 'Data Dashboard Healthcare',
-        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
-        image: "./assets/images/backimage.png",
+        languages: ['CSS', 'HTML', 'RUBY'],
+        image: "./assets/images/popupbg2.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
         liveLink: '',
@@ -34,8 +34,8 @@ const projects = [
 
     {
         name: 'Website Portfolio More',
-        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
-        image: "./assets/images/backimage.png",
+        languages: ['CSS', 'HTML', 'RUBY'],
+        image: "./assets/images/popupbg2.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
         liveLink: '',
@@ -44,8 +44,8 @@ const projects = [
 
     {
         name: 'Data Dashboard Healthcare',
-        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
-        image: "./assets/images/backimage.png",
+        languages: ['CSS', 'HTML', 'RUBY'],
+        image: "./assets/images/popupbg2.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
         liveLink: '',
@@ -53,8 +53,8 @@ const projects = [
     },
     {
         name: 'Website Portfolio More',
-        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
-        image: "./assets/images/backimage.png",
+        languages: ['CSS', 'HTML', 'RUBY'],
+        image: "./assets/images/popupbg2.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
         liveLink: '',
@@ -125,7 +125,7 @@ function popup(project) {
             </article>
             <article class="popup-bottom">
                 <div class="popup-bottom-image">
-                    <img class="popup-image" src="./assets/images/popupbg2.png" alt="popup-image" />
+                    <img class="popup-image" src="${project.image}" alt="popup-image" />
                 </div>
                 <div class="image-description">
                     <p class="image-text ">

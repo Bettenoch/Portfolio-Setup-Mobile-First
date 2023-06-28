@@ -1274,7 +1274,7 @@ form {
 }
 .project-header{
   display: flex;
-  gap: 30rem;
+  gap: 34rem;
 }
 .project-header h3{
   display: flex;
@@ -1313,8 +1313,10 @@ form {
 }
 .popup-bottom-image{
   overflow: hidden;
+  width: 100%;
 }
 .popup-bottom-image .popup-image{
+  width: 100%;
   max-width: 100%;
   transition: transform .5s ease;
 
