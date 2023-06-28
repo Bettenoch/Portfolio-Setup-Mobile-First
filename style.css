@@ -1274,7 +1274,7 @@ form {
 }
 .project-header{
   display: flex;
-  gap: 34rem;
+  gap: 30rem;
 }
 .project-header h3{
   display: flex;
@@ -1323,8 +1323,11 @@ form {
   transform: scale(1.5);
 }
 .popup-btn{
-  margin-top: 49%;
+  display: flex;
+  gap: 1rem;
+  margin-top: 48%;
 }
+
 .popup-btn .btn{
   font-size: 1rem; 
 }
@@ -1339,15 +1342,25 @@ form {
   color: #344563 ; 
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.5rem;
   padding-bottom: 2rem;
 }
 @media screen and (max-width: 768px) {
+  .popup-holder{
+    max-width: 85%;
+  }
+
+  .popup{
+    margin: auto 0.5rem;
+   
+  }
+
   .popup-bottom{
     flex-direction: column;
     gap: 0.5rem;
   }
   .popup-bottom-image .popup-image{
-    max-width: 80%;
+    max-width: 100%;
   
   }
   .project-header h3{
@@ -1362,12 +1375,9 @@ form {
     max-width: 100%;
    }
   .project-header{
-    gap: 10rem !important;
+    gap: 6rem !important;
   }
-  .image-description .image-text{
-    font-size: 0.7rem;
-    padding: 0;
-  }
+  
   .popup-btn{
     margin-top: 5% !important;
   }
@@ -1378,12 +1388,12 @@ form {
 }
 @media screen and (max-width: 450px) {
   .project-header{
-    gap: 6rem !important;
+    gap: 2rem !important;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 375px) {
   .project-header{
-    gap: 4rem !important;
+    gap: 1rem !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1400,7 +1410,7 @@ form {
 }
 @media screen and (max-width: 1020px) {
   .project-header{
-    gap: 18rem;
+    gap: 12rem;
   }
   .popup-btn{
     margin-top: 15%;
@@ -1410,8 +1420,15 @@ form {
   
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .project-header{
+    gap: 14rem;
+  }
+}
+
 @media screen and (max-width: 920px) {
   .project-header{
-    gap: 12rem;
+    gap: 8rem;
   }
 }

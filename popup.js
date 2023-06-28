@@ -4,7 +4,7 @@ const projects = [
 
     {
         name: 'Data Dashboard Healthcare',
-        languages: ['CSS', 'HTML', 'RUBY'],
+        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
         image: "./assets/images/backimage.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
@@ -14,7 +14,7 @@ const projects = [
 
     {
         name: 'Website Portfolio More',
-        languages: ['CSS', 'HTML', 'RUBY', ],
+        languages: ['CSS', 'HTML', 'RUBY ON RAILS', ],
         image: "./assets/images/backimage.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
@@ -24,7 +24,7 @@ const projects = [
 
     {
         name: 'Data Dashboard Healthcare',
-        languages: ['CSS', 'HTML', 'RUBY'],
+        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
         image: "./assets/images/backimage.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
@@ -34,7 +34,7 @@ const projects = [
 
     {
         name: 'Website Portfolio More',
-        languages: ['CSS', 'HTML', 'RUBY'],
+        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
         image: "./assets/images/backimage.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
@@ -44,7 +44,7 @@ const projects = [
 
     {
         name: 'Data Dashboard Healthcare',
-        languages: ['CSS', 'HTML', 'RUBY'],
+        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
         image: "./assets/images/backimage.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
@@ -53,7 +53,7 @@ const projects = [
     },
     {
         name: 'Website Portfolio More',
-        languages: ['CSS', 'HTML', 'RUBY'],
+        languages: ['CSS', 'HTML', 'RUBY ON RAILS'],
         image: "./assets/images/backimage.png",
         description: 
         'A daily selection of privately personalizedreads; no accounts or sign-ups required.This has been the industry standard dummy text ever since the 1500s, when an uknown printertook a standaed dummy text',
