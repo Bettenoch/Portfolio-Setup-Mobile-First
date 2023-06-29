@@ -45,6 +45,8 @@ const isEmailValid = (email) => {
   return re.test(email);
 };
 
+const isLowerCase = (email) => (email.value === email.toLowerCase);
+
 const showError = (input, message) => {
   // get the form-field element
   const formField = input.parentElement;
@@ -96,6 +98,8 @@ const checkEmail = () => {
     showError(emailAdress, 'Email cannot be blank.');
   } else if (!isEmailValid(email)) {
     showError(emailAdress, 'Email is not valid.');
+  } else if (!isLowerCase(email)) {
+    showError(emailAdress, 'Email should be in Lower Case characters.');
   } else {
     showSuccess(emailAdress);
     valid = true;
