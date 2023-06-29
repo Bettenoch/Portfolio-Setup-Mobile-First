@@ -1091,8 +1091,7 @@ form {
   flex-direction: column;
   align-items: center;
   color: #979493;
-  padding: 0rem 0rem 1.437rem  1.562rem;
-
+  padding: 0 0 1.437rem  1.562rem;
 }
 
 .input-box input {
@@ -1105,10 +1104,11 @@ form {
   font-size: 0.94rem;
   padding: 0.75rem;
 }
-.input-box small{
+
+.input-box small {
   width: 100%;
   padding: 0.75rem;
-
+  color: #dc3545;
 }
 
 .input-area {
@@ -1161,16 +1161,11 @@ form {
 }
 
 .input-box.error input {
-  border-color: #dc3545;;
+  border-color: #dc3545;
 }
 
 .input-box.success input {
-  border-color: #28a745;;
-}
-
-
-.input-box small {
-  color: #dc3545;
+  border-color: #28a745;
 }
 
 /* footer */
