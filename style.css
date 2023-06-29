@@ -1399,7 +1399,7 @@ form {
 }
 
 .popup-btn .btn {
-  /* display: flex; */
+  display: flex;
   font-size: 1rem;
 
 }
