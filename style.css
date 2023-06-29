@@ -1306,7 +1306,6 @@ form {
   background: #fff;
   top: 5%;
   bottom: 1%;
-
 }
 
 .popup-top {
@@ -1365,6 +1364,7 @@ form {
 }
 
 .popup-bottom-image {
+  display: flex;
   overflow: hidden;
   width: 100%;
 }
@@ -1379,30 +1379,27 @@ form {
   transform: scale(1.5);
 }
 
-
-
 .image-description {
   display: flex;
   flex-direction: column;
   max-width: 40%;
   position: relative;
-  
 }
+
 .popup-btn {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   display: flex;
   padding-top: 1rem;
   width: 100%;
   gap: 1rem;
-  
 }
 
 .popup-btn .btn {
   display: flex;
   font-size: 1rem;
-
 }
+
 .image-description .image-text {
   display: flex;
   font-family: 'Inter', sans-serif;
@@ -1416,16 +1413,14 @@ form {
 @media screen and (max-width: 768px) {
   .popup-holder {
     max-width: 85%;
-    
   }
 
   .popup-btn {
     gap: 0;
     justify-content: space-between;
     position: relative;
-   
   }
-  
+
 
   .popup {
     margin: auto 0.5rem;
@@ -1450,9 +1445,7 @@ form {
   }
 }
 
-
 @media screen and (max-width: 1020px) {
- 
   .popup-bottom-image .popup-image {
     max-height: 100%;
   }
