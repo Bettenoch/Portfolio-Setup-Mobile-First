@@ -105,7 +105,6 @@ const checkEmail = () => {
 
 form.addEventListener('submit', (e) => {
   // prevent the form from submitting
-  e.preventDefault();
 
   // validate fields
   const isUsernameValid = checkUsername();
@@ -114,8 +113,10 @@ form.addEventListener('submit', (e) => {
   const isFormValid = isUsernameValid
       && isEmailValid;
 
-  if (isFormValid) {
-    // submit to the server if the form is valid
+  if (!isFormValid) {
+    e.preventDefault();
+  } else {
+    // Submit form
   }
 });
 
