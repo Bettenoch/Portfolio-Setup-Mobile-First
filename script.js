@@ -45,7 +45,7 @@ const isEmailValid = (email) => {
   return re.test(email);
 };
 
-const isLowerCase = (email) => (email.value === email.toLowerCase);
+const isLowerCase = (email) => (email === email.toLowerCase());
 
 const showError = (input, message) => {
   // get the form-field element
