@@ -177,21 +177,29 @@
                         </p>
                     </div>
                     <div class="contact-bottom-bar">
-                        <form action="https://formspree.io/f/mlekqgrr" method="POST">
+                        <form action="https://formspree.io/f/mlekqgrr" method="POST" id="myForm">
+
                             <div class="input-box">
-                                <input type="text" class="input" name="full-name" placeholder="Full name" maxlength="30">
-                                
+                                <input type="text" id="myName" class="input" name="full-name" placeholder="Full name" maxlength="30">
+                                <small></small>
                             </div>
+
                             <div class="input-box">
-                                <input type="email" class="input" name="email" placeholder="Email adress" required>
-                                
+                                <input type="email" id="myEmail" class="input" name="email" placeholder="Email adress" required>
+                                <small></small>
                             </div>
+
                             <div class="input-area">
                                 <textarea name="" id="message" cols="30" rows="10" maxlength="500" placeholder="Write me something..." required></textarea>
                                 
                             </div>
+
                             <div class="submit">
                                 <input class="contact-btn" type="submit" value="Get in Touch">
+                            </div>
+
+                            <div>
+                                <span id="form-validity"></span>
                             </div>
                             
                         </form>
@@ -223,7 +231,7 @@
 
     </section>
     <script src="popup.js"></script>
-    <script src="popup2.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
