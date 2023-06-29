@@ -125,7 +125,7 @@ function popup(project) {
 
   const popupContainer = `
     <section class="popup">
-        <article class="projects container popup-holder">
+        <article class=" popup-holder">
             <article class="popup-top">
                 <div class="project-header">
                     <div>

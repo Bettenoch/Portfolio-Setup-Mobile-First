@@ -1283,7 +1283,7 @@ form {
   backdrop-filter: blur(4px);
   align-items: center;
   justify-content: center;
-  margin: auto 2.4rem;
+  margin: auto 1rem;
   width: 100%;
   height: 100vh;
   z-index: 1001;
@@ -1293,18 +1293,20 @@ form {
 
 .popup-holder {
   position: fixed;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
   overflow: hidden;
-  max-width: 75%;
+  max-width: 80%;
   width: 100%;
   height: 90vh;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background: #dfe1e6;
-  border-radius: 8px;
+  background: #fff;
   top: 5%;
+  bottom: 1%;
+
 }
 
 .popup-top {
@@ -1312,6 +1314,7 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 0;
 }
 
 .project-header {
@@ -1355,6 +1358,7 @@ form {
 
 .popup-bottom {
   display: flex;
+  flex: 1;
   width: 100%;
   gap: 2rem;
   overflow: hidden;
@@ -1375,24 +1379,32 @@ form {
   transform: scale(1.5);
 }
 
-.popup-btn {
-  display: flex;
-  width: 100%;
-  gap: 1rem;
-  margin-top: 48%;
-}
 
-.popup-btn .btn {
-  font-size: 1rem;
-}
 
 .image-description {
   display: flex;
   flex-direction: column;
   max-width: 40%;
+  position: relative;
+  
+}
+.popup-btn {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  padding-top: 1rem;
+  width: 100%;
+  gap: 1rem;
+  
 }
 
+.popup-btn .btn {
+  /* display: flex; */
+  font-size: 1rem;
+
+}
 .image-description .image-text {
+  display: flex;
   font-family: 'Inter', sans-serif;
   color: #344563;
   font-weight: 400;
@@ -1404,14 +1416,16 @@ form {
 @media screen and (max-width: 768px) {
   .popup-holder {
     max-width: 85%;
-    height: 100%;
+    
   }
 
   .popup-btn {
     gap: 0;
     justify-content: space-between;
-    margin-top: 5% !important;
+    position: relative;
+   
   }
+  
 
   .popup {
     margin: auto 0.5rem;
@@ -1436,17 +1450,9 @@ form {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .popup-btn {
-    margin-top: 30%;
-  }
-}
 
 @media screen and (max-width: 1020px) {
-  .popup-btn {
-    margin-top: 15%;
-  }
-
+ 
   .popup-bottom-image .popup-image {
     max-height: 100%;
   }
