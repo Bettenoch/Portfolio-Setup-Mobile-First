@@ -222,7 +222,7 @@
 }
 
 .headline-text h1 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: var(--font-secondary);
   font-style: normal;
   font-weight: 400;
   font-size: 3.5rem;
@@ -462,11 +462,17 @@
 
 .img-holder {
   padding-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .img-holder img {
   max-width: 20.4rem;
   max-height: 14.8rem;
+  transition: transform 0.5s ease;
+}
+
+.img-holder img:hover {
+  transform: scale(1.5);
 }
 
 .menu_icons .closeicon img {
@@ -617,10 +623,11 @@
 
 .btn2-holder {
   display: flex;
+  cursor: pointer;
   text-decoration: none;
   justify-content: center;
   padding: 0.75rem;
-  background: c;
+  background: var(--orange-color);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -630,6 +637,7 @@
   letter-spacing: 0.03em;
   border: none;
   width: 100%;
+  background-color: #8c8e92;
 }
 
 .btn2-holder:hover {
@@ -648,19 +656,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
-  }
-
-  .content-head :nth-child(1) {
-    content-visibility: none;
-  }
-
-  .content-head :nth-child(2) {
-    display: inherit;
-    flex-grow: 1;
-  }
-
-  .btn2-holder {
-    display: none;
   }
 
   .item0 {
@@ -1278,6 +1273,180 @@ form {
 
   .submit {
     justify-content: flex-start;
+  }
+}
+
+/* Popup section */
+
+.popup {
+  display: flex;
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  margin: auto 1rem;
+  width: 100%;
+  height: 100vh;
+  z-index: 1001;
+  top: 0;
+  position: fixed;
+}
+
+.popup-holder {
+  position: fixed;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  overflow: hidden;
+  max-width: 80%;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #fff;
+  top: 5%;
+  bottom: 1%;
+}
+
+.popup-top {
+  align-items: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.project-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-header h3 {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #172b4d;
+  font-family: var(--font-secondary);
+}
+
+.project-header .close-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.close-btn .popup-close-icon {
+  width: 3.3rem;
+}
+
+.project-details {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.project-details li {
+  border: 1px solid #979493;
+  text-transform: lowercase;
+  padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+}
+
+.popup-bottom {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.popup-bottom-image {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.popup-bottom-image .popup-image {
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.popup-bottom-image .popup-image:hover {
+  transform: scale(1.5);
+}
+
+.image-description {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  position: relative;
+}
+
+.popup-btn {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding-top: 1rem;
+  width: 100%;
+  gap: 1rem;
+}
+
+.popup-btn .btn {
+  display: flex;
+  font-size: 1rem;
+}
+
+.image-description .image-text {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  color: #344563;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .popup-holder {
+    max-width: 85%;
+  }
+
+  .popup-btn {
+    gap: 0;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .popup {
+    margin: auto 0.5rem;
+  }
+
+  .popup-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .popup-bottom-image .popup-image {
+    max-width: 100%;
+  }
+
+  .project-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .image-description {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .popup-bottom-image .popup-image {
+    max-height: 100%;
   }
 }
 
