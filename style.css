@@ -1081,16 +1081,18 @@
   color: #172b4d;
 }
 
-.input-box {
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  color: #979493;
-  padding: 1.5rem 1.5rem 1.437rem  1.562rem;
-}
-
 form {
   width: 100%;
+}
+
+.input-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #979493;
+  padding: 0rem 0rem 1.437rem  1.562rem;
+
 }
 
 .input-box input {
@@ -1102,6 +1104,11 @@ form {
   font-weight: 400;
   font-size: 0.94rem;
   padding: 0.75rem;
+}
+.input-box small{
+  width: 100%;
+  padding: 0.75rem;
+
 }
 
 .input-area {
@@ -1151,6 +1158,19 @@ form {
 .contact-btn:active {
   color: #fff;
   background: #f55800;
+}
+
+.input-box.error input {
+  border-color: #dc3545;;
+}
+
+.input-box.success input {
+  border-color: #28a745;;
+}
+
+
+.input-box small {
+  color: #dc3545;
 }
 
 /* footer */
