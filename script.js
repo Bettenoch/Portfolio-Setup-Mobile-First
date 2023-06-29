@@ -137,5 +137,16 @@ const debounce = (fn, delay = 500) => {
   };
 };
 
+form.addEventListener('input', debounce(function (e) {
+  switch (e.target.id) {
+      case 'myName':
+          checkUsername();
+          break;
+      case 'myEmail':
+          checkEmail();
+          break;
+  }
+}));
+
 
 
