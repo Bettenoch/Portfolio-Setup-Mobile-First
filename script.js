@@ -151,3 +151,21 @@ form.addEventListener('input', debounce((e) => {
     // do nothing
   }
 }));
+
+// Local Storage
+
+const userText = document.getElementById('message');
+
+const contactInfo = {
+  fName: String,
+  email: String,
+  text: String,
+};
+
+form.addEventListener('input', () => {
+  contactInfo.text = userText.value;
+  contactInfo.email = emailAdress.value;
+  contactInfo.fName = userNameE.value;
+
+  localStorage.setItem('contactInfo', JSON.stringify(contactInfo));
+});
