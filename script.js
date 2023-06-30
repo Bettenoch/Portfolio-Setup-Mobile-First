@@ -169,3 +169,13 @@ form.addEventListener('input', () => {
 
   localStorage.setItem('contactInfo', JSON.stringify(contactInfo));
 });
+
+window.onload = () => {
+  const information = JSON.parse(localStorage.getItem('contactInfo'));
+
+  if (information) {
+    userNameE.value = information.fName;
+    emailAdress.value = information.email;
+    userText.value = information.text;
+  }
+};
